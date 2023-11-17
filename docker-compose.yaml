@@ -27,7 +27,8 @@ services:
   cucumbertestcases:
     image: atttest/entireconfigurationinyamlimage
     depends_on:
-    - hub
+    - chrome
+    - firefox
     environment:
     - HUB_HOST=hub  
     volumes:
